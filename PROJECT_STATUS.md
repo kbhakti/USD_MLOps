@@ -3,7 +3,7 @@
 
 **Team:** Bhakti Kanungo, Sabina George, Lokesh Upputri
 **Date:** June 20, 2026
-**AWS Account:** Personal account (Tanuj - 882248517783, us-east-1)
+**AWS Account:** Personal account (Lokesh - 882248517783, us-east-1)
 
 ---
 
@@ -11,6 +11,8 @@
 
 Predict student academic performance (High vs Low) using Machine Learning.
 - **Dataset:** UCI Student Performance Dataset (Math: 395 + Portuguese: 649 = 1044 students)
+  - Source: [UCI ML Repository](https://archive.ics.uci.edu/dataset/320/student+performance) — [direct download (zip)](https://archive.ics.uci.edu/static/public/320/student+performance.zip)
+  - Citation: P. Cortez and A. Silva, "Using Data Mining to Predict Secondary School Student Performance," 2008.
 - **Target:** Binary classification — High Performance (G3 >= 12) vs Low Performance (G3 < 12)
 - **Best Model:** Tuned Random Forest Classifier
 - **Platform:** AWS SageMaker
@@ -77,15 +79,15 @@ Predict student academic performance (High vs Low) using Machine Learning.
 
 ## AWS Resources Used
 
-| Resource | Details | Status |
-|---|---|---|
-| S3 Bucket | sagemaker-us-east-1-882248517783 | Active (data stored) |
-| Notebook Instance | student-performance (ml.t3.medium) | Stopped |
-| Feature Store | student-performance-* | Created |
-| Model Registry | StudentPerformanceModelGroup | Model registered |
-| Endpoint | student-performance-endpoint | Deleted |
-| Pipeline | StudentPerformancePipeline | Executed |
-| Model Monitor | Baseline job | Completed |
+| Resource          | Details                            | Status               |
+| ----------------- | ---------------------------------- | -------------------- |
+| S3 Bucket         | sagemaker-us-east-1-882248517783   | Active (data stored) |
+| Notebook Instance | student-performance (ml.t3.medium) | Stopped              |
+| Feature Store     | student-performance-*              | Created              |
+| Model Registry    | StudentPerformanceModelGroup       | Model registered     |
+| Endpoint          | student-performance-endpoint       | Deleted              |
+| Pipeline          | StudentPerformancePipeline         | Executed             |
+| Model Monitor     | Baseline job                       | Completed            |
 
 ---
 
@@ -126,9 +128,9 @@ SageMaker/
 
 ## Remaining Tasks
 
-| Task | Owner | Estimated Time |
-|---|---|---|
-| Push code to GitHub (kbhakti/USD_MLOps) | Lokesh/Bhakti | 10 min |
-| Record 10-15 min video demo | All 3 members | 1-2 hours |
-| Finalize ML Design Document with results | All 3 members | 30 min |
-| Submit all 3 deliverables on Canvas | Delegate | 5 min |
+| Task                                     | Owner         | Estimated Time |
+| ---------------------------------------- | ------------- | -------------- |
+| Push code to GitHub (kbhakti/USD_MLOps)  | Lokesh/Bhakti | 10 min         |
+| Record 10-15 min video demo              | All 3 members | 1-2 hours      |
+| Finalize ML Design Document with results | All 3 members | 30 min         |
+| Submit all 3 deliverables on Canvas      | Delegate      | 5 min          |
